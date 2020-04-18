@@ -1,0 +1,87 @@
+@import url('https://db.onlinewebfonts.com/c/415c1cffdc1ffdf955cdd328ad4a4c87?family=Cheltenham');
+
+.bookRow {
+  width: 95%;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+.rowTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+}
+
+.flexRow {
+  display: flex;
+}
+
+.bookInfo {
+  width: 20%;
+}
+
+.bookFlex { 
+  display: flex;
+  margin-left: 10px;
+}
+
+.bookRank {
+  margin: 0;
+  font-family: Times, serif;
+  font-weight: normal;
+  color: #999;
+}
+
+.bookImage {
+  width: 100px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+.bottom {
+  height: 170px;
+  position: relative;
+}
+
+.bookWeeks {
+  font-size: 10px;
+  font-weight: normal;
+  margin: 10px 0 0 20px;
+}
+
+.bookTitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+}
+
+.bookAuthor {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 0 20px;
+}
+
+.amazonButton {
+  position: absolute;
+  bottom: 20px;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 0 0 20px;
+  vertical-align: text-bottom;
+  background-color: #326791;
+  color: white;
+  cursor: pointer;
+}
+
+.amazonLink {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
