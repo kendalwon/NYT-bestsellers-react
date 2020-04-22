@@ -26,21 +26,45 @@
 .mainLink {
   font-family: Courier, monospace;
   font-weight: 600;
-  font-size: 13px;
-  margin: 40px 0 10PX 0;
+  font-size: 15px;
+  margin: 25px 0 15px 0;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.titleFlex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
   font-family: Cheltenham, Georgia, 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: bold;
-  margin: 0;
+  margin: 5px 0;
 }
 
 .tagline {
   font-family: Cheltenham, Georgia, 'Times New Roman', Times, serif;
   font-size: 17px;
   color: #aaa;
-  margin: 5px 0 10px 0;
+  margin: 0 0 5px 0;
+}
+
+.socialButton {
+  background-color: #eee;
+  border: none;
+  margin: 0 10px;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.socialLink {
+  color: black;
 }
 
