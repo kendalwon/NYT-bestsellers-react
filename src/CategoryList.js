@@ -1,17 +1,40 @@
 import React from 'react';
 import './CategoryList.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 class CategoryList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.decideArrow = this.decideArrow.bind(this);
+  }
+
+  decideArrow(book) {
+    if (book.rank_last_week === 0) {
+      return 'up';
+    }
+    if (book.rank <= book.rank_last_week) {
+      return 'up';
+    }
+    if (book.rank > book.rank_last_week) {
+      return 'down';
+    }
+  }
 
   renderBookInfo(book) {
+    const arrow = this.decideArrow(book);
+    console.log(arrow);
     return (
-      <div className='categoryRow'>
+      <div className='categoryRow' key={book.rank}>
         <div className='categoryFlex'>
-          <div className='categoryRank'>
-            <h1 className='categoryBookRank'> 
+          <div className='rankFlex'>
+            <h1 className='categoryRank'> 
               {book.rank}
             </h1>
-            <p classname='arrow'>arrow</p>
+            <p className='arrow'>
+              <FontAwesomeIcon icon={(arrow === 'up') ? faArrowUp : faArrowDown} />
+            </p>
           </div>
           <div className='categoryInfo'>
             <h2 className='categoryWeeks'>
@@ -31,23 +54,25 @@ class CategoryList extends React.Component {
             <h2 className='description'>
               {book.description}
             </h2>
-            <button className='amazonButton'>
-              <a className='amazonLink' href={book.amazon_product_url} target='_blank' rel="noopener noreferrer">BUY</a>
-            </button>
           </div>       
+          
+        </div>
+        <a className='imageLink' href={book.amazon_product_url} target='_blank' rel='noopener noreferrer'>
           <img className='categoryImage'
             src={book.book_image}
             alt={book.title} />
-        </div>
+        </a>
       </div>
     )
   }
 
   render() {
+    console.log(this.props.books);
     return (
-      <>
-
-      </>
+      <div className='categoryList'>  
+        {this.props.books.map(book => this.renderBookInfo(book)
+        )}
+      </div>
     )  
   }
 }

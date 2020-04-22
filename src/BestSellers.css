@@ -9,22 +9,32 @@
 }
 
 .rowTitle {
+  position: relative;
   font-weight: bold;
   font-size: 18px;
   margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+.chevronRight {
+  position: relative;
+  bottom: 2px;
+  left: 5px;
+  font-size: 10px;
 }
 
 .flexRow {
   display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
 }
 
 .bookInfo {
-  width: 20%;
+  width: 18%;
 }
 
 .bookFlex { 
   display: flex;
-  margin-left: 10px;
 }
 
 .bookRank {
@@ -37,7 +47,7 @@
 .bookImage {
   width: 100px;
   height: 150px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .bottom {
@@ -84,4 +94,91 @@
   color: white;
   text-decoration: none;
 }
+
+.chevronDown {
+  font-size: 8px;
+  position: relative;
+  bottom: 1px;
+  left: 3px;
+}
+
+@media only screen and (max-width: 930px) {
+  .bookImage {
+    width: 80px;
+    height: 120px;
+    margin-left: 10px;
+  }
+  .bookWeeks {
+    margin: 5px 0 0 20px;
+  }
+  .bookTitle {
+    font-size: 13px;
+  }
+  .bookAuthor {
+    font-size: 12px;
+  }
+  .bottom {
+    height: 190px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .flexRow {
+    display: block;
+    margin-left: 10px;
+  }
+  .rowTitle{
+    margin: 20px 0 20px 0;
+  }
+  .bookInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .noBorder {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .bookFlex { 
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    top: 40px;
+    
+  }
+  .bookImage {
+    position: relative;
+    bottom: 25px;
+    left: 80%;
+    width: 80px;
+    height: 120px;
+  }
+  .bottom {
+    position: relative;
+    bottom: 110px;
+    left: 10px;
+  }
+  .bookWeeks {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px 0 0 20px;
+  }
+  .bookTitle {
+    width: 50%;
+    font-size: 18px;
+  }
+  .bookAuthor {
+    font-size: 16px;
+    width: 50%;
+  }
+  .amazonButton {
+    position: relative;
+    top: 10px;
+  }
+}
+
 

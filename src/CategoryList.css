@@ -1,2 +1,85 @@
 @import url('https://db.onlinewebfonts.com/c/415c1cffdc1ffdf955cdd328ad4a4c87?family=Cheltenham');
 
+.categoryRow {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+.categoryFlex {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.rankFlex {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  text-align: center;
+}
+
+.categoryRank {
+  margin: 0;
+  font-family: Times, serif;
+  font-weight: normal;
+  color: #999;
+}
+
+.arrow {
+  font-size: 20px;
+  margin: 0;
+  color: #999;
+}
+
+.categoryInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryWeeks {
+  font-size: 10px;
+  font-weight: normal;
+  margin: 10px 0 0 20px;
+}
+
+.categoryTitle {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+}
+
+.authorFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.categoryAuthor {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 0 20px;
+  padding-right: 5px;
+  border-right: 1px solid #999;
+}
+
+.publisher {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 0 5px;
+}
+
+.description {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 15px 0 0 20px;
+}
+
+.categoryImage {
+  width: 90px;
+  height: 120px;
+  margin: 10px;
+}
