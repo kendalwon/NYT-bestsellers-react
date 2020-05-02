@@ -5,12 +5,8 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 class CategoryList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.decideArrow = this.decideArrow.bind(this);
-  }
 
-  decideArrow(book) {
+  decideArrow = (book) => {
     if (book.rank_last_week === 0) {
       return 'up';
     }
@@ -22,9 +18,8 @@ class CategoryList extends React.Component {
     }
   }
 
-  renderBookInfo(book) {
+  renderBookInfo = (book) => {
     const arrow = this.decideArrow(book);
-    console.log(arrow);
     return (
       <div className='categoryRow' key={book.rank}>
         <div className='categoryFlex'>
@@ -67,7 +62,6 @@ class CategoryList extends React.Component {
   }
 
   render() {
-    console.log(this.props.books);
     return (
       <div className='categoryList'>  
         {this.props.books.map(book => this.renderBookInfo(book)
