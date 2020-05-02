@@ -15,10 +15,6 @@ class BestSellers extends React.Component {
       display: null,
       bookLists: {}
     }
-    this.renderBookRow = this.renderBookRow.bind(this);
-    this.renderCategoryList = this.renderCategoryList.bind(this);
-    this.handleClick = this.handleClick.bind(this);
-    this.loadMain = this.loadMain.bind(this);
   }
 
   componentDidMount() {
@@ -36,7 +32,7 @@ class BestSellers extends React.Component {
     }
   }
 
-  fetchPictureBooks() {
+  fetchPictureBooks = () => {
     const url = 'https://api.nytimes.com/svc/books/v3/lists/picture-books.json?api-key=' + NYTApiKey;
     fetch(url)
     .then(response => response.json())
@@ -55,7 +51,7 @@ class BestSellers extends React.Component {
     .catch(error => console.log(error));
   }
 
-  fetchSeriesBooks() {
+  fetchSeriesBooks = () => {
     const url = 'https://api.nytimes.com/svc/books/v3/lists/series-books.json?api-key=' + NYTApiKey;
     fetch(url)
     .then(response => response.json())
@@ -74,7 +70,7 @@ class BestSellers extends React.Component {
     .catch(error => console.log(error));
   }
 
-  fetchMiddleGradeHardcover() {
+  fetchMiddleGradeHardcover = () => {
     const url = 'https://api.nytimes.com/svc/books/v3/lists/childrens-middle-grade-hardcover.json?api-key=' + NYTApiKey;
     fetch(url)
     .then(response => response.json())
@@ -93,7 +89,7 @@ class BestSellers extends React.Component {
     .catch(error => console.log(error));
   }
 
-  fetchYoungAdultHardcover() {
+  fetchYoungAdultHardcover = () => {
     const url = 'https://api.nytimes.com/svc/books/v3/lists/young-adult-hardcover.json?api-key=' + NYTApiKey;
     fetch(url)
     .then(response => response.json())
@@ -112,7 +108,7 @@ class BestSellers extends React.Component {
     .catch(error => console.log(error));
   }
 
-  handleClick(e) {
+  handleClick = (e) => {
     const listName = e.target.dataset.list;
     const heading = e.target.dataset.heading;
     this.setState({
@@ -121,14 +117,14 @@ class BestSellers extends React.Component {
     })
   }
 
-  loadMain() {
+  loadMain = () => {
     this.setState({
       heading: 'The New York Times Best Sellers',
       display: 'main',
     })
   }
 
-  renderCategoryList() {
+  renderCategoryList = () => {
     const display = this.state.display;
     const pictureBooks = this.state.bookLists.pictureBooks;
     const seriesBooks = this.state.bookLists.seriesBooks;
@@ -156,7 +152,7 @@ class BestSellers extends React.Component {
     }
   }
 
-  renderBookRow(bookList, listName) {
+  renderBookRow = (bookList, listName) => {
     const list = bookList.list;
     const top5 = bookList.top5;
     return (
@@ -203,7 +199,6 @@ class BestSellers extends React.Component {
     const seriesBooks = this.state.bookLists.seriesBooks;
     const middleGradeHardcover = this.state.bookLists.middleGradeHardcover;
     const youngAdultHardcover = this.state.bookLists.youngAdultHardcover;
-    console.log(this.state);
     return (
       <>
         <Header 

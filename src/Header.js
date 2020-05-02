@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 class Header extends React.Component {
 
-  renderMainLink() {
+  renderMainLink = () => {
     if (this.props.title !== 'The New York Times Best Sellers') {
       return (
         <h2 className='mainLink link'
@@ -18,7 +18,7 @@ class Header extends React.Component {
     );
   }
 
-  renderTagline() {
+  renderTagline = () => {
     if (this.props.title === 'The New York Times Best Sellers') {
       return (
         <h2 className='tagline'>Ranked lists of children's books sold in the United States.</h2>
