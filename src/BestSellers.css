@@ -76,12 +76,10 @@
 .amazonButton {
   position: absolute;
   bottom: 20px;
+  left: 30px;
   width: 80px;
   height: 30px;
   border-radius: 5px;
-  text-align: center;
-  margin: 0 0 0 20px;
-  vertical-align: text-bottom;
   background-color: #326791;
   color: white;
   cursor: pointer;
@@ -148,7 +146,6 @@
     display: block;
     position: relative;
     top: 40px;
-    
   }
   .bookImage {
     position: relative;
@@ -178,6 +175,7 @@
   .amazonButton {
     position: relative;
     top: 10px;
+    left: 20px;
   }
 }
 
