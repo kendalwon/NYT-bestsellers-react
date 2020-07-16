@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a71b70b8e69774ef78ba004cf1901e69",
+    "revision": "de7984627dcc383b65843c05d06c4c84",
     "url": "/NYT-bestsellers-react/index.html"
   },
   {
-    "revision": "6c556d52e11108481bff",
-    "url": "/NYT-bestsellers-react/static/css/main.4c22f0f9.chunk.css"
+    "revision": "8886d80bc03ad7e936e1",
+    "url": "/NYT-bestsellers-react/static/css/main.d37afbe5.chunk.css"
   },
   {
     "revision": "0acc9b1906a89b380f9e",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NYT-bestsellers-react/static/js/2.149debb4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c556d52e11108481bff",
+    "revision": "8886d80bc03ad7e936e1",
     "url": "/NYT-bestsellers-react/static/js/main.48d57808.chunk.js"
   },
   {
