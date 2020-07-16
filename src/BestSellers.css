@@ -190,6 +190,9 @@
   .rowTitle {
     margin: 5px 0;
   }
+  .flexRow {
+    margin-left: 0;
+  }
   .bookFlex {
     margin: 0;
     top: 0;
