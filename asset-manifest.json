@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/NYT-bestsellers-react/static/css/main.d7694f94.chunk.css",
+    "main.css": "/NYT-bestsellers-react/static/css/main.36dfacab.chunk.css",
     "main.js": "/NYT-bestsellers-react/static/js/main.48d57808.chunk.js",
     "main.js.map": "/NYT-bestsellers-react/static/js/main.48d57808.chunk.js.map",
     "runtime-main.js": "/NYT-bestsellers-react/static/js/runtime-main.55fa5394.js",
@@ -8,16 +8,16 @@
     "static/js/2.149debb4.chunk.js": "/NYT-bestsellers-react/static/js/2.149debb4.chunk.js",
     "static/js/2.149debb4.chunk.js.map": "/NYT-bestsellers-react/static/js/2.149debb4.chunk.js.map",
     "index.html": "/NYT-bestsellers-react/index.html",
-    "precache-manifest.eefb9fe010d08b13b8c0e1462f650fa8.js": "/NYT-bestsellers-react/precache-manifest.eefb9fe010d08b13b8c0e1462f650fa8.js",
+    "precache-manifest.d3613ce4b9639eefaf8a26e41c96f38f.js": "/NYT-bestsellers-react/precache-manifest.d3613ce4b9639eefaf8a26e41c96f38f.js",
     "service-worker.js": "/NYT-bestsellers-react/service-worker.js",
-    "static/css/main.d7694f94.chunk.css.map": "/NYT-bestsellers-react/static/css/main.d7694f94.chunk.css.map",
+    "static/css/main.36dfacab.chunk.css.map": "/NYT-bestsellers-react/static/css/main.36dfacab.chunk.css.map",
     "static/js/2.149debb4.chunk.js.LICENSE.txt": "/NYT-bestsellers-react/static/js/2.149debb4.chunk.js.LICENSE.txt",
     "static/media/Header.css": "/NYT-bestsellers-react/static/media/Chomsky.28133665.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.55fa5394.js",
     "static/js/2.149debb4.chunk.js",
-    "static/css/main.d7694f94.chunk.css",
+    "static/css/main.36dfacab.chunk.css",
     "static/js/main.48d57808.chunk.js"
   ]
 }
