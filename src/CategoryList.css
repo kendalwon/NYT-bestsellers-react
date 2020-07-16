@@ -81,3 +81,12 @@
   height: 120px;
   margin: 10px;
 }
+
+@media only screen and (max-width: 400px) {
+  .categoryFlex {
+    padding-bottom: 10px;
+  }
+  .categoryImage {
+    margin: 10px 0;
+  }
+}
