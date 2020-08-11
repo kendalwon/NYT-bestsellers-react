@@ -1,4 +1,6 @@
 .bookRow {
+  position: relative;
+  top: 50px;
   width: 95%;
   margin: auto;
   border-bottom: 1px solid #ddd;
