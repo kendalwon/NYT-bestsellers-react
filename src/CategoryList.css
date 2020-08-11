@@ -1,4 +1,6 @@
 .categoryRow {
+  position: relative;
+  top: 50px;
   display: flex;
   width: 95%;
   margin: auto;
